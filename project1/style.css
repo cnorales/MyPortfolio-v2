@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #081b29;
+    background-color: #7091E6;
     /* background: url('images/Norales, Citlaly.jpg') no-repeat; */
     /* background-attachment: fixed;
     background-position: right top; */
@@ -32,7 +32,7 @@ body {
 
 .logo {
     position: relative;
-    font-size: 25px;
+    font-size: 28px;
     color: #ededed;
     text-decoration: none;
     font-weight: 600;
@@ -45,13 +45,13 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
+    background: #7091E6;
     animation: showRight 1s ease forwards;
     animation-delay: .4s;
 }
 
 .navbar a {
-    font-size: 18px;
+    font-size: 24px;
     color: #ededed;
     text-decoration: none;
     font-weight: 500;
@@ -91,7 +91,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
+    background: #7091E6;
     animation: showRight 1s ease forwards;
     animation-delay: 1s;
 }
@@ -110,7 +110,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
+    background: #7091E6;
     animation: showRight 1s ease forwards;
     animation-delay: 1.3s;
 }
@@ -128,7 +128,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
+    background: #7091E6;
     animation: showRight 1s ease forwards;
     animation-delay: 1.6s;
 }
@@ -148,7 +148,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
+    background: #7091E6;
     animation: showRight 1s ease forwards;
     animation-delay: 1.9s;
     z-index: 2;
@@ -165,7 +165,7 @@ body {
     border: 2px solid #00abf0;
     border-radius: 8px;
     font-size: 19px;
-    color: #081b29;
+    color: #7091E6;
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
@@ -184,12 +184,12 @@ body {
 }
 
 .btn-box a:nth-child(2):hover {
-    color: #081b29;
+    color: #7091E6;
 }
 
 .btn-box a:nth-child(2)::before {
     background: #00abf0;
-    color: #081b29;
+    color: #7091E6;
 }
 
 .btn-box a::before {
@@ -199,7 +199,7 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background: #081b29;
+    background: #7091E6;
     z-index: -1;
     transition: .5s;
 
@@ -225,7 +225,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
+    background: #7091E6;
     animation: showRight 1s ease forwards;
     animation-delay: 2.5s;
     z-index: 2;
@@ -250,7 +250,7 @@ body {
 }
 
 .home-sci a:hover {
-    color: #081b29;
+    color: #7091E6;
 }
 
 .home-sci a::before {
@@ -285,7 +285,7 @@ body {
 }
 
 .home-imgHover:hover {
-    background: #081b29;
+    background: #7091E6;
     opacity: .8;
 }
 
@@ -296,7 +296,7 @@ body {
     right: 0;
     width: 120%;
     height: 100%;
-    background: #081b29;
+    background: #7091E6;
     animation: showRight 1s ease forwards;
     animation-delay: 3s;
     z-index: 100;
@@ -312,4 +312,52 @@ body {
     100% {
         pointer-events: auto;
     }
+}
+
+/* Resume.html */
+section.resume {
+    height: 100vh;
+    background-size: 500px;
+    background-position: right top; 
+    display: flex;
+    padding: 0 10%;
+}
+#sendUp {
+    width: auto;
+    margin-left: 400px;
+    text-align: right;
+}
+
+.resume {
+    text-align: left;
+    font-family: "Work Sans";
+    font-size: 48px;
+}
+hr {
+    height: 100px;
+    /* background: #f8f8f8; */
+    margin: 0;
+    border: 0;
+  }
+
+section.resume div {
+    width: 100%;
+    background: #7091E6;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    line-height: 1;
+    display: flex;
+    font-family: "Work Sans";
+}
+
+section.resume div a {
+    width: 14%;
+    padding: 10px;
+    margin: 0;
+    line-height: 1;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    text-align: center;
 }

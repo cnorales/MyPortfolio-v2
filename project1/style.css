@@ -14,7 +14,7 @@ body {
     background-position: right top; */
     /* background-size: cover;  */
     background-size: 500px;
-    color: #ededed;
+    color: white;
 }
 
 .header {
@@ -59,7 +59,7 @@ body {
 }
 
 .navbar a:hover, .navbar a.active {
-    color: #00abf0;
+    color: #0A090C;
 }
 
 .home {
@@ -100,7 +100,7 @@ body {
     position: relative;
     font-size: 32px;
     font-weight: 700;
-    color: #00abf0;
+    color: #0A090C;
 }
 
 .home-content h3::before {
@@ -161,8 +161,8 @@ body {
     align-items: center;
     width: 150px;
     height: 100%;
-    background: #00abf0;
-    border: 2px solid #00abf0;
+    background: #0A090C;
+    border: 2px solid #0A090C;
     border-radius: 8px;
     font-size: 19px;
     color: #7091E6;
@@ -175,12 +175,12 @@ body {
 }
 
 .btn-box a:hover {
-    color: #00abf0;
+    color: #0A090C;
 }
 
 .btn-box a:nth-child(2) {
     background: transparent;
-    color: #00abf0;
+    color: #0A090C;
 }
 
 .btn-box a:nth-child(2):hover {
@@ -188,7 +188,7 @@ body {
 }
 
 .btn-box a:nth-child(2)::before {
-    background: #00abf0;
+    background: #0A090C;
     color: #7091E6;
 }
 
@@ -239,10 +239,10 @@ body {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #00abf0;
+    border: 2px solid #0A090C;
     border-radius: 50%;
     font-size: 20px;
-    color: #00abf0;
+    color: #0A090C;
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
@@ -260,7 +260,7 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background: #00abf0;
+    background: #0A090C;
     z-index: -1;
     transition: .5s;
 }
@@ -315,34 +315,48 @@ body {
 }
 
 /* Resume.html */
-section.resume {
-    height: 100vh;
-    background-size: 500px;
+/* #resume {
+    background-color: #d9a5b3;
+} */
+
+#resume header {
+    position: relative;
+}
+
+#resume section {
+    width: 100%;
+    /* height: 100vh; */
+    /* background-size: 500px; */
     background-position: right top; 
-    display: flex;
-    padding: 0 10%;
+    display: inline;
+    padding: 10 10%;
 }
 #sendUp {
-    width: auto;
-    margin-left: 400px;
+    width: 100%;
+    margin-left: 90%;
     text-align: right;
 }
 
+#sendUp a {
+    text-decoration: none;
+}
+
 .resume {
+    margin-left: 1%;
     text-align: left;
     font-family: "Work Sans";
-    font-size: 48px;
+    font-size: 24px;
 }
 hr {
     height: 100px;
     /* background: #f8f8f8; */
     margin: 0;
     border: 0;
-  }
+}
 
 section.resume div {
     width: 100%;
-    background: #7091E6;
+    background: white; 
     color: white;
     padding: 10px;
     margin: 0;
@@ -351,7 +365,7 @@ section.resume div {
     font-family: "Work Sans";
 }
 
-section.resume div a {
+#resume section div a {
     width: 14%;
     padding: 10px;
     margin: 0;
@@ -360,4 +374,125 @@ section.resume div a {
     justify-content: space-between;
     /* align-items: center; */
     text-align: center;
+}
+
+#resume .container {
+    display: block;
+    width: 50%; 
+    /* background-color: white;  */
+    background-color: #c6d7eb;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.skills {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.skills p  {
+    margin-right: 2%;
+    text-align: right;
+    color: white;
+}
+
+.html {width: 60%; background-color:#1868ae;} 
+.css {width: 60%; background-color: #1868ae;} 
+.js {width: 45%; background-color: #1868ae;} 
+.java {width: 50%; background-color: #1868ae;}
+.c-plus {width: 60%; background-color: #1868ae;} 
+.python {width: 65%; background-color: #1868ae;} 
+.arduino {width: 25%; background-color: #1868ae;}
+.scratch {width: 40%; background-color: #1868ae;} 
+.word {width: 85%; background-color: #1868ae;}  
+.powerpoint {width: 85%; background-color: #1868ae;} 
+.excel {width: 70%; background-color: #1868ae;} 
+.eng {width: 90%; background-color: #1868ae;} 
+.spanish {width:82%; background-color: #1868ae;} 
+
+.skill-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    /* height: 100%; */
+    background: #c6d7eb;
+    animation: showText 0.5s 1s linear forwards;
+}
+
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+.workExp, .projects, .education, .certification {
+    margin-left: 2%;
+    display: inline-block;
+}
+
+
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer::before {
+    content: '';
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #7091E6;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.5s;
+    z-index: 2;
+}
+
+footer a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    transition: .5s;
+}
+
+footer a:hover::before {
+    width: 100%;
 }
